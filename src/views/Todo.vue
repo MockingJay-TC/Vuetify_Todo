@@ -22,7 +22,7 @@
       colored-border
       icon="mdi-alert"
     >
-      Hi, Ruth Brown
+      Please Enter a Todo Title
     </v-alert>
     <v-list class="pt-0" flat>
       <div v-for="task in tasks" :key="task.id">
@@ -62,21 +62,21 @@ export default {
       alert: false,
       newTaskTitle: "",
       tasks: [
-        {
-          id: 1,
-          title: "Eat you",
-          done: false,
-        },
-        {
-          id: 2,
-          title: "Kiss you",
-          done: false,
-        },
-        {
-          id: 3,
-          title: "Bite you",
-          done: false,
-        },
+        // {
+        //   id: 1,
+        //   title: "Eat you",
+        //   done: false,
+        // },
+        // {
+        //   id: 2,
+        //   title: "Kiss you",
+        //   done: false,
+        // },
+        // {
+        //   id: 3,
+        //   title: "Bite you",
+        //   done: false,
+        // },
       ],
     };
   },
