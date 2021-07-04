@@ -11,6 +11,18 @@
       clearable
       append-icon="mdi-plus"
     ></v-text-field>
+    <v-alert
+    class="ma-6"
+      v-model="alert"
+      dismissible
+      color="red"
+      border="left"
+      elevation="2"
+      colored-border
+      icon="mdi-alert"
+    >
+      Hi, Ruth Brown
+    </v-alert>
     <v-list class="pt-0" flat>
       <div v-for="task in tasks" :key="task.id">
         <v-list-item
@@ -46,6 +58,7 @@ export default {
   name: "Home",
   data() {
     return {
+      alert: false,
       newTaskTitle: "",
       tasks: [
         {
@@ -73,8 +86,9 @@ export default {
         title: this.newTaskTitle,
         done: false,
       };
+      alert = false
       if (this.newTaskTitle == "") {
-        alert("Invalid Input");
+        this.alert = true;
       } else {
         this.tasks.push(newTask);
         this.newTaskTitle = "";
