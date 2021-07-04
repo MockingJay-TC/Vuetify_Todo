@@ -50,35 +50,34 @@ export default {
       tasks: [
         {
           id: 1,
-          title: "Wake Up",
+          title: "Eat you",
           done: false,
         },
         {
           id: 2,
-          title: "Buy Bananas",
+          title: "Kiss you",
           done: false,
         },
         {
           id: 3,
-          title: "Eat Bananas",
+          title: "Lick you",
           done: false,
         },
       ],
     };
   },
   methods: {
-    addTask(){
+    addTask() {
       let newTask = {
         id: Date.now(),
         title: this.newTaskTitle,
-        done: false
-      }
-      if (this.newTaskTitle == ''){
-        alert("Invalid Input")
-      }
-      else{
-        this.tasks.push(newTask)
-        this.newTaskTitle = ''
+        done: false,
+      };
+      if (this.newTaskTitle == "") {
+        alert("Invalid Input");
+      } else {
+        this.tasks.push(newTask);
+        this.newTaskTitle = "";
       }
     },
     doneTask(id) {
