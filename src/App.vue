@@ -40,6 +40,7 @@
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-app-bar-title>Vuetify Todo</v-app-bar-title>
+      <v-app-bar-subTitle>{{new Date (Date.now()).toDateString()}}</v-app-bar-subTitle>  
 
       <v-spacer></v-spacer>
 
