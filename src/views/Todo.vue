@@ -8,11 +8,12 @@
       outlined
       label="Add Tasks"
       hide-details
+      maxlength="30"
       clearable
       append-icon="mdi-plus"
     ></v-text-field>
     <v-alert
-    class="ma-6"
+      class="ma-6"
       v-model="alert"
       dismissible
       color="red"
@@ -86,7 +87,6 @@ export default {
         title: this.newTaskTitle,
         done: false,
       };
-      alert = false
       if (this.newTaskTitle == "") {
         this.alert = true;
       } else {
