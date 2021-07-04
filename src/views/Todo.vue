@@ -60,7 +60,7 @@ export default {
         },
         {
           id: 3,
-          title: "Lick you",
+          title: "Bite you",
           done: false,
         },
       ],
