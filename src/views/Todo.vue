@@ -13,7 +13,7 @@
       append-icon="mdi-plus"
     ></v-text-field>
     <v-alert
-      class="ma-6"
+      class="mx-6"
       v-model="alert"
       dismissible
       color="red"
