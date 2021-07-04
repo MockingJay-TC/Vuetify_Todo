@@ -73,7 +73,7 @@ export default {
         title: this.newTaskTitle,
         done: false
       }
-      if (this.newTask.title == ''){
+      if (this.newTaskTitle == ''){
         alert("Invalid Input")
       }
       else{
